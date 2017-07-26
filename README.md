@@ -29,6 +29,8 @@ $ sudo docker-compose up -d
 
 By default the container starts running `monerod`. See `docker-entrypoint.sh`.
 
+Local directory called `data` is mounted into the container directory `/root/.bitmonero` for data persistency.
+
 You can tail container logs and see where blockchain sync is going:
 
 ```
