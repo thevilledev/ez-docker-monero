@@ -1,0 +1,8 @@
+version: '2'
+services:
+  monero:
+    tty: true
+    build: .
+    image: docker.io/vtorhonen/ez-docker-monero:0.10.3.1
+    volumes:
+     - ./data:/root/.bitmonero
